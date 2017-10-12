@@ -4,16 +4,154 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.vivifystressmanagementappdesign.StartActivity">
-
-    <TextView
-        android:id="@+id/sample_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/freepik"
+        android:text="@string/button_Profile"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@android:drawable/ic_menu_save"
+        android:text="@string/button_Diary"
+        android:textAlignment="center"
+        android:textSize="0sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_manage"
+        android:text="@string/button_Settings"
+        android:textSize="0sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button8"
+        app:layout_constraintLeft_toRightOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@android:drawable/ic_menu_view"
+        android:text="@string/button_Vitals"
+        android:textSize="0sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintRight_toLeftOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_share"
+        android:text="@string/button_Groups"
+        android:textSize="0sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button10"
+        app:layout_constraintLeft_toRightOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="?android:attr/actionModePasteDrawable"
+        android:text="@string/button_Coach"
+        android:textSize="0sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        app:layout_constraintRight_toLeftOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_sort_by_size"
+        android:text="@string/button_Activity"
+        android:textSize="0sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button12"
+        tools:text="@string/button_Activity"
+        app:layout_constraintLeft_toRightOf="@+id/button12"
+        android:layout_marginTop="-148dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="88dp"
+        android:layout_height="22dp"
+        android:text="Diary"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/button8"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="97dp"
+        android:layout_height="23dp"
+        android:text="Settings"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintRight_toRightOf="@+id/button9" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="83dp"
+        android:layout_height="27dp"
+        android:text="Live Vitals"
+        android:textAlignment="viewStart"
+        android:layout_gravity="start"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/button10"
+        app:layout_constraintRight_toRightOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="47dp"
+        android:layout_height="21dp"
+        android:text="Groups"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="@+id/button11"
+        app:layout_constraintRight_toRightOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintHorizontal_bias="0.488" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="55dp"
+        android:layout_height="24dp"
+        android:text="E-Coach"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="@+id/button12"
+        app:layout_constraintRight_toRightOf="@+id/button12"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="49dp"
+        android:layout_height="23dp"
+        android:text="Activity"
+        app:layout_constraintLeft_toLeftOf="@+id/button13"
+        app:layout_constraintRight_toRightOf="@+id/button13"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Vivify Stress management app design</string>
+    <string name="button_Profile">Profile</string>
+    <string name="button_Diary">Diary</string>
+    <string name="button_Settings">Settings</string>
+    <string name="button_Groups">Groups</string>
+    <string name="button_Coach">E-Coach</string>
+    <string name="button_Activity">Activity</string>
+    <string name="button_Vitals">Live Vitals</string>
+    <string name="app_name">Vivify</string>
+    <string name="button_iets">0</string>
 </resources>
