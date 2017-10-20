@@ -19,29 +19,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-    //public static void buttonEffect(View button){
-    //  button.setOnTouchListener(new View.OnTouchListener() {
 
-    //public boolean onTouch(View v, MotionEvent event) {
-    //  switch (event.getAction()) {
-    //    case MotionEvent.ACTION_DOWN: {
-    //      v.getBackground().setColorFilter(0xe0f47521, PorterDuff.Mode.SRC_ATOP);
-    //    v.invalidate();
-    //  break;
+    //public static void buttonEffect(View button) {
+      //  button.setOnTouchListener(new View.OnTouchListener() {
+
+      //      public boolean onTouch(View v, MotionEvent event) {
+        //        switch (event.getAction()) {
+          //          case MotionEvent.ACTION_DOWN: {
+            //            v.getBackground().setColorFilter(0xe0f47521, PorterDuff.Mode.SRC_ATOP);
+              //          v.invalidate();
+                //        break;
+                  //  }
+                    //case MotionEvent.ACTION_UP: {
+                      //  v.getBackground().clearColorFilter();
+                        //v.invalidate();
+                        //break;
+                    //}
+                //}
+                //return false;
+        //    }
+       // });
     //}
-    //case MotionEvent.ACTION_UP: {
-    //  v.getBackground().clearColorFilter();
-    //v.invalidate();
-    // break;
-    //}
-    //}
-    //return false;
-    //}
-    //});
-    //}
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
-    public native String stringFromJNI();
+    // A native method that is implemented by the 'native-lib' native library,
+    // which is packaged with this application.
+   public native String stringFromJNI();
 }
