@@ -1,5 +1,6 @@
 package com.example.user.vivifystressmanagementappdesign;
 
+import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -83,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
         button13.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonEffect(findViewById(R.id.button13));
+            }
+        });
+        Button btn = (Button)findViewById(R.id.button12);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, e_coach.class));
             }
         });
     }
