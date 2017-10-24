@@ -86,12 +86,20 @@ public class MainActivity extends AppCompatActivity {
                 buttonEffect(findViewById(R.id.button13));
             }
         });
-        Button btn = (Button)findViewById(R.id.button12);
+        Button btn12 = (Button)findViewById(R.id.button12);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, e_coach.class));
+            }
+        });
+        Button btn9 = (Button)findViewById(R.id.button9);
+
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Settings.class));
             }
         });
     }
