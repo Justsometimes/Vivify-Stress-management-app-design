@@ -44,6 +44,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".e_coach" />
         </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UserAreaActivity"></activity>
     </application>
 
 </manifest>

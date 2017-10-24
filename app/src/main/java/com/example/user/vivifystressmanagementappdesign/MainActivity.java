@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         System.loadLibrary("native-lib");
     }
 
-
+    //This gives button visual feedback, when pressed
     public static void buttonEffect(View button) {
         button.setOnTouchListener(new View.OnTouchListener() {
 
