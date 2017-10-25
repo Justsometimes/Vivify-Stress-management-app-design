@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".e_coach"
             android:label="E-Coach">
@@ -46,7 +46,18 @@
                 android:value=".e_coach" />
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".UserAreaActivity"></activity>
+        <activity android:name=".UserAreaActivity" />
+        <activity
+            android:name=".activity_group"
+            android:label="Groups"
+            android:parentActivityName=".MainActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".grouplist"></activity>
     </application>
 
 </manifest>
