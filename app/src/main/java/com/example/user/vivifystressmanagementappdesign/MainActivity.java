@@ -67,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
         button10.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonEffect(findViewById(R.id.btnLivevitals));
+                buttonEffect(findViewById(R.id.btnProfile));
+                Intent vitalsContinue = new Intent(MainActivity.this, LiveVitals.class);
+                MainActivity.this.startActivity(vitalsContinue);
             }
         });
         final Button button11 = (Button) findViewById(R.id.btnGroups);
