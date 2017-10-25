@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case MotionEvent.ACTION_UP: {
+
                         v.getBackground().clearColorFilter();
                         v.invalidate();
                         break;
@@ -61,14 +62,15 @@ public class MainActivity extends AppCompatActivity {
         button9.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonEffect(findViewById(R.id.btnSettings));
+                Intent settingsContinue = new Intent(MainActivity.this, Settings.class);
+                MainActivity.this.startActivity(settingsContinue);
             }
         });
         final Button button10 = (Button) findViewById(R.id.btnLivevitals);
         button10.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonEffect(findViewById(R.id.btnLivevitals));
-                buttonEffect(findViewById(R.id.btnProfile));
-                Intent vitalsContinue = new Intent(MainActivity.this, LiveVitals.class);
+                Intent vitalsContinue = new Intent(MainActivity.this, LiveVitalsActivity.class);
                 MainActivity.this.startActivity(vitalsContinue);
             }
         });
@@ -88,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
         button13.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonEffect(findViewById(R.id.btnActivity));
+                Intent activityContinue = new Intent(MainActivity.this, ActivityActivity.class);
+                MainActivity.this.startActivity(activityContinue);
             }
         });
         Button btn12 = (Button)findViewById(R.id.btnCoach);
@@ -100,13 +104,7 @@ public class MainActivity extends AppCompatActivity {
         });
         Button btn9 = (Button)findViewById(R.id.btnSettings);
 
-        btn9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Settings.class));
-            }
-        });
-        Button btn11 = (Button)findViewById(R.id.button11);
+/*        Button btn11 = (Button)findViewById(R.id.button11);
 
         btn11.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, activity_group.class));
             }
         });
+        */
 
     }
 

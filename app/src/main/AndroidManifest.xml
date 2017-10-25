@@ -58,7 +58,8 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".grouplist" />
-        <activity android:name=".LiveVitals"></activity>
+        <activity android:name=".LiveVitalsActivity" />
+        <activity android:name=".ActivityActivity"></activity>
     </application>
 
 </manifest>
