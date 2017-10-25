@@ -35,4 +35,5 @@
     <string name="button_resetacc">Reset Account</string>
     <string name="button_connect">Connect Smartwatch</string>
     <string name="button_disconnect">Disconnect Smartwatch</string>
+    <string name="action_settings">Settings</string>
 </resources>

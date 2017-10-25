@@ -102,6 +102,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Settings.class));
             }
         });
+        Button btn11 = (Button)findViewById(R.id.button11);
+
+        btn11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, activity_group.class));
+            }
+        });
+
     }
 
     // A native method that is implemented by the 'native-lib' native library,
