@@ -21,5 +21,13 @@ public class e_coach extends AppCompatActivity {
                 startActivity(new Intent(e_coach.this, Challenges.class));
             }
         });
+        Button btn4 = (Button)findViewById(R.id.button4);
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(e_coach.this, e_coach_activities.class));
+            }
+        });
     }
 }

@@ -57,7 +57,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".grouplist"></activity>
+        <activity android:name=".grouplist" />
+        <activity
+            android:name=".e_coach_activities"
+            android:label="Activities"
+            android:parentActivityName=".e_coach">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".e_coach" />
+        </activity>
     </application>
 
 </manifest>
