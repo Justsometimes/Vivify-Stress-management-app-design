@@ -43,12 +43,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-        final Button button7 = (Button) findViewById(R.id.button7);
-=======
 
         final Button button7 = (Button) findViewById(R.id.btnProfile);
->>>>>>> 0bb055667e98438b78b235843df2ea4fdfc5ca2a
         button7.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonEffect(findViewById(R.id.btnProfile));
@@ -116,11 +112,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, activity_group.class));
             }
         });
-<<<<<<< HEAD
-=======
         */
 
->>>>>>> 0bb055667e98438b78b235843df2ea4fdfc5ca2a
     }
 
     // A native method that is implemented by the 'native-lib' native library,
