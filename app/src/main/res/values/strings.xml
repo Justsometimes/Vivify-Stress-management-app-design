@@ -8,6 +8,10 @@
     <string name="button_Vitals">Live Vitals</string>
     <string name="app_name">Vivify</string>
     <string name="button_iets">0</string>
+    <string name="button_new_note">Make entry...</string>
+    <string name="button_edit_note">Edit today\'s entry...</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
     <string-array name="spinner_pushmessage">
         <item>10 sec</item>
         <item>15 sec</item>

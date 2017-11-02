@@ -52,12 +52,14 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(profileContinue);
             }
         });
+
         final Button button8 = (Button) findViewById(R.id.btnDiary);
         button8.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonEffect(findViewById(R.id.btnDiary));
             }
         });
+
         final Button button9 = (Button) findViewById(R.id.btnSettings);
         button9.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(settingsContinue);
             }
         });
+
         final Button button10 = (Button) findViewById(R.id.btnLivevitals);
         button10.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -74,18 +77,21 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(vitalsContinue);
             }
         });
+
         final Button button11 = (Button) findViewById(R.id.btnGroups);
         button11.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonEffect(findViewById(R.id.btnGroups));
             }
         });
+
         final Button button12 = (Button) findViewById(R.id.btnCoach);
         button12.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 buttonEffect(findViewById(R.id.btnCoach));
             }
         });
+
         final Button button13 = (Button) findViewById(R.id.btnActivity);
         button13.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -94,14 +100,24 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(activityContinue);
             }
         });
-        Button btn12 = (Button)findViewById(R.id.btnCoach);
 
+        final Button diaryButton = (Button) findViewById(R.id.btnDiary);
+        diaryButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                buttonEffect(findViewById(R.id.btnDiary));
+                Intent diaryContinue = new Intent(MainActivity.this, DiaryActivity.class);
+                MainActivity.this.startActivity(diaryContinue);
+            }
+        });
+
+        final Button btn12 = (Button)findViewById(R.id.btnCoach);
         btn12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, e_coach.class));
             }
         });
+
         Button btn9 = (Button)findViewById(R.id.btnSettings);
 
 /*        Button btn11 = (Button)findViewById(R.id.button11);
